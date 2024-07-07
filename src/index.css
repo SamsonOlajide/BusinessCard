@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #23252C;
+    font-family: 'inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-picture{
+    width: 517px; 
+    height: 517px; 
+    object-fit: cover;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.main-div{
+    width: 517px; 
+    background-color: #1A1B21;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.main-div:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 3);
+}
+
+
+.name-and-role{
+    h1{
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    p{
+        font-size: 25px;
+        color: #F3BF99;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+}
+.main-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;  
+    border: none;
+    transition: 0.3s;
+    color: #374151;
+    background-color: white;
+    text-decoration: none;
+    &:hover{
+        background-color: #5093E2;
+        color: #23252C;
+        transform: scale(1.1);
+    }
+    p{
+        margin: 0px;
+        color: #23252C;
+        font-weight:500;
+        font-size: 22px;
+    }
+}
+
+.main-button-outer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+.about-section{
+    margin-top: 40px;
+    width: 400px;
+    p{
+        color: white;
+        font-size: 18.5px;
+        margin: 0px;
+        font-weight: 300;
+    }
+    h1{
+        color: white;
+        font-size: 25px;
+        margin: 0px 0 10px 0;
+        font-weight: 500;
+        font-weight: 700;
+    
+    }
+}
+.interests-section{
+    width: 400px;
+    margin-bottom: 60px;
+    p{
+        color: white;
+        font-size: 18.5px;
+        margin: 0px;
+        font-weight: 300;
+    }
+    h1{
+        color: white;
+        font-size: 25px;
+        margin: 0px 0 10px 0;
+        font-weight: 500;
+        font-weight: 700;
+    
+    }
+}
+
+.about-and-interest-section-outer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+footer{
+    background-color: #161619;
+    border-radius: 0 0 30px 30px;
+}
+footer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    a{
+        margin-right: 20px;
+    }
 }
